@@ -1,6 +1,6 @@
 <?php
 
-namespace Mobilpay\Payment\Request;
+namespace Artgames\Mobilpay\Payment\Request;
 
 /**
  * Class RequestAbstract
