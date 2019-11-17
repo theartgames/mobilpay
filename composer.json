@@ -1,6 +1,6 @@
 {
-    "name": "theartgames/laravel-mobilpay",
-    "description": "Laravel implementation of Netopia Mobilpay",
+    "name": "theartgames/mobilpay",
+    "description": "implementation of Mobilpay",
     "type": "library",
     "license": "MIT",
     "authors": [
