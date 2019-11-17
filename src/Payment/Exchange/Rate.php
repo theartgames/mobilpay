@@ -5,7 +5,7 @@ namespace Artgames\Mobilpay\Payment\Exchange;
 /**
  * Class Rate
  * @copyright   Copyright (c) NETOPIA
- * @author      Claudiu Tudose / maintainer  Daniel Stancu
+ * @author      Claudiu Tudose / maintainer  Artgames
  * @version     2.1
  *
  */
