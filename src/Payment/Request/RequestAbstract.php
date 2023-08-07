@@ -177,8 +177,9 @@ abstract class RequestAbstract
         }
 
         $data = null;
-        $result = @openssl_open($srcData, $data, $srcEnvKey, $privateKey, 'RC4');
-        
+        $iv = openssl_random_pseudo_bytes(32);
+        $result = @openssl_open($srcData, $data, $srcEnvKey, $privateKey, 'RC4', $iv);
+
         if ($result === false) {
             throw new \Exception('Failed decrypting data', self::ERROR_CONFIRM_FAILED_DECRYPT_DATA);
         }
