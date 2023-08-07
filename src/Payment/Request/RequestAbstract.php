@@ -327,7 +327,8 @@ abstract class RequestAbstract
         $publicKeys = [$publicKey];
         $encData = null;
         $envKeys = null;
-        $result = openssl_seal($srcData, $encData, $envKeys, $publicKeys);
+        $iv = openssl_random_pseudo_bytes(32);
+        $result = openssl_seal($srcData, $encData, $envKeys, $publicKeys, 'RC4', $iv);
         if ($result === false) {
             $this->outEncData = null;
             $this->outEnvKey = null;
